@@ -1,7 +1,7 @@
 menu_list_array = ["Veg Margherita Pizza","Margherita","Double Cheese Margherita","Deluxe Veggie","Cheese N Corn","Pepper Barbecue Chicken","Chicken Sausage","Chicken Golden Delight","Non Veg Supreme","Tomato","Onion","Cheesy"&"Capsicum"];
 function getmenu(){
 var htmldata;
-htmldata = "<ol class="menulist">";
+htmldata = "<ol class='menulist'>";
 menu_list_array.sort();
 for(var i = 0;i<menu_list_array.length;i++){
     htmldata=htmldata+'<li>' + menu_list_array[i] + '<li>';
@@ -15,7 +15,7 @@ var item=document.getElementById("add_item").value;
 menu_list_array.sort();
 htmldata = "<section class='cards'>";
 for(var i = 0;i<menu_list_array.length;i++){
-    htmldata=htmldata+'<div class="card">' '+' '<img src="pizzalmg.png">' 'style="width: 100px; height: 80px;"/>' + menu_list_array[i] + '</div>';
+    htmldata=htmldata+'<div class="card">' + '<img src="pizzalmg.png">' 'style = width: 100px; height: 80px;' + 'menu_list_array[i]' + '</div>';
 }
 htmldata=htmldata+'</section>';
 document.getElementById("display_addedmenu").innerHTML = htmldata;
